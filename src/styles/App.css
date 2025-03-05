@@ -1,0 +1,71 @@
+/* 전체 앱 컨테이너 */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 각 섹션 간 간격 추가 */
+.section {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 버튼 스타일 */
+.calculate-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calculate-button:hover {
+    background-color: #0056b3;
+}
+
+/* 차트 영역 스타일 */
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.row-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.result-container {
+    flex: 1;  /* 결과를 왼쪽에 배치 */
+    text-align: left;
+}
+
+.chart-container {
+    flex: 2;  /* 그래프를 더 넓게 설정 */
+    max-width: 600px; /* 그래프 최대 너비 */
+}
