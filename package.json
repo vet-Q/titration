@@ -17,7 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "start": "electron .",        
+    "dist": "electron-builder", 
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
   },
   "eslintConfig": {
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^35.0.0"
+    "electron": "35.0.0",
+    "electron-builder": "25.1.8"
   }
 }
