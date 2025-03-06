@@ -1,0 +1,43 @@
+.well-plate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.dilution-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dilution-label {
+    width: 60px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.well-container {
+    display: flex;
+    gap: 5px;
+}
+
+.well {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  /* ✅ 원형 Well */
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.well.positive {
+    background-color: red;
+}
+
+.positive-count {
+    font-weight: bold;
+    width: 50px;
+    text-align: left;
+}

@@ -1,0 +1,89 @@
+/* 기본 스타일: 전체 폰트, 배경 색 등 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  /* 앱 컨테이너 중앙 정렬 및 최대 너비 지정 */
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* 타이틀 스타일 */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* 섹션별 스타일: 여백, 배경, 그림자, 둥근 모서리 */
+  .section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* 버튼 스타일 */
+  .calculate-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 결과와 차트 영역을 나란히 배치하는 레이아웃 */
+  .row-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* 결과 컨테이너와 차트 컨테이너 기본 스타일 */
+  .result-container,
+  .chart-container {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* 결과 디스플레이 내 제목 스타일 */
+  .result-display h2,
+  .result-display h3 {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  /* 입력 요소 스타일 */
+  input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* 반응형: 화면 너비 768px 이하일 때 레이아웃 수직 정렬 */
+  @media (max-width: 768px) {
+    .row-layout {
+      flex-direction: column;
+    }
+  }
+  
